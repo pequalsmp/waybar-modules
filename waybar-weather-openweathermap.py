@@ -18,9 +18,9 @@ with open(config_file, "rb") as t:
 
 params = {
     "appid": config["general"]["apikey"],
-    "lat": config["sofia"]["lat"],
-    "lon": config["sofia"]["lon"],
     "lang": config["general"]["lang"],
+    "lat": config["location"]["lat"],
+    "lon": config["location"]["lon"],
 }
 
 # https://openweathermap.org/api/one-call-api
